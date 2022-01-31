@@ -177,6 +177,111 @@ header {
   background-color: #8f96ff;
 }
 
+.block-text__title {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 126%;
+  color: #000;
+}
+
+.block-text__title:not(:last-child) {
+  margin: 0 0 12px 0;
+}
+
+.block-text__title span {
+  color: #EC5863;
+}
+
+.block-text__title_blue span {
+  color: #4285F4;
+}
+
+.block-text__text {
+  line-height: 138.5%;
+}
+
+.block-text__text:not(:last-child) {
+  margin: 0 0 24px 0;
+}
+
+.get-started {
+  background-color: #FAFBFD;
+}
+
+.get-started__container {
+  padding: 150px 15px 50px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+}
+
+.get-started__container::before {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  right: 252px;
+  top: 0;
+  border-radius: 30px 0 0 30px;
+  background-color: #EC5863;
+  transform: translate(100%, 0px);
+}
+
+.get-started__content {
+  flex: 0 1 48%;
+  padding: 0px 0px 0px 20px;
+}
+
+.get-started__block-text {
+  max-width: 410px;
+}
+
+.get-started__image {
+  flex: 0 1 52%;
+  position: relative;
+  z-index: 2;
+}
+.get-started__image img {
+  max-width: 100%;
+}
+
+.get-started__video {
+  flex: 1 1 auto;
+  margin: 60px 0px 0px 20px;
+}
+
+.video-get-started {
+  display: inline-flex;
+  align-items: center;
+}
+
+.video-get-started__body {
+  margin: 0 0 0 12px;
+}
+
+.video-get-started__icon {
+  flex: 0 0 44px;
+}
+
+.video-get-started__title {
+  line-height: 126%;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  color: #B0B0B0;
+}
+
+.video-get-started__title:not(:last-child) {
+  margin: 0 0 5px 0;
+}
+
+.video-get-started__text {
+  line-height: 126%;
+  text-transform: uppercase;
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
 @media (max-width: 1087px) {
   [class*=__container] {
     max-width: 900px;
@@ -210,7 +315,7 @@ header {
     left: -100%;
     width: 100%;
     height: 100%;
-    background-color: #ffffff;
+    background-color: #FAFBFD;
     padding: 80px 15px 30px 15px;
     transition: left 0.3s ease 0s;
     overflow: auto;
@@ -238,7 +343,7 @@ header {
     top: 0;
     height: 80px;
     width: 100%;
-    background-color: #fff;
+    background-color: #FAFBFD;
   }
 
   .icon-menu {
